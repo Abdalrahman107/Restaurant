@@ -17,7 +17,7 @@ function HomeOffersSlider() {
     console.log(error);
     return (
       <div className="py-6 text-center">
-        <p className="text-red-400">{ error?.response?.data?.err || err?.response?.data || "Could not load Offers."}
+        <p className="text-red-400">{ error?.response?.data?.err || error?.response?.data || "Could not load Offers."}
         </p>
       </div>
     );

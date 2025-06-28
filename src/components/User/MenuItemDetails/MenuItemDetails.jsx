@@ -21,7 +21,7 @@ const MenuItemDetails = () => {
       queryClient.invalidateQueries(["cart"]);
     },
     onError: (error) => {
-      toast.error(error?.response?.data?.err || err?.response?.data || "Something went wrong");
+      toast.error(error?.response?.data?.err || error?.response?.data || "Something went wrong");
     },
   });
 
@@ -55,7 +55,7 @@ const MenuItemDetails = () => {
     console.log(error);
     return (
       <div className="py-6 h-[50vh] text-center">
-        <p className="text-red-400">{ error?.response?.data?.err || err?.response?.data || "Could not load Food."}</p>
+        <p className="text-red-400">{ error?.response?.data?.err || error?.response?.data || "Could not load Food."}</p>
       </div>
     );
   }

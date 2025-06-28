@@ -32,7 +32,7 @@ const MenuCategory = () => {
     },
     onError: (error) => {
       console.log(error);
-      toast.error(error?.response?.data?.err || err?.response?.data || "Something went wrong");
+      toast.error(error?.response?.data?.err || error?.response?.data || "Something went wrong");
     },
   });
 
@@ -77,14 +77,14 @@ const MenuCategory = () => {
   if (offersError) {
     return (
       <div className="py-6 h-[50vh] text-center">
-        <p className="text-red-400">{ foodError?.response?.data?.err || err?.response?.data || "Could not load Offers."}</p>
+        <p className="text-red-400">{ foodError?.response?.data?.err || error?.response?.data || "Could not load Offers."}</p>
       </div>
     );
   }
   if (categoryError) {
     return (
       <div className="py-6 h-[50vh] text-center">
-        <p className="text-red-400">{ error?.response?.data?.err || err?.response?.data || "Could not load categories."}</p>
+        <p className="text-red-400">{ error?.response?.data?.err || error?.response?.data || "Could not load categories."}</p>
       </div>
     );
   }

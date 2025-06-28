@@ -24,7 +24,7 @@ export default function PaymentResult({ paymentStatus }) {
     onError: (error) => {
       console.log(error);
       
-      toast.error(error?.response?.data?.err || err?.response?.data || "Something went wrong");
+      toast.error(error?.response?.data?.err || error?.response?.data || "Something went wrong");
     },
   });
 
@@ -49,7 +49,7 @@ export default function PaymentResult({ paymentStatus }) {
     console.log(error);
     return (
       <div className="py-6 min-h-screen text-center">
-        <p className="text-red-400">{ error?.response?.data?.err || err?.response?.data || "Could not load page."}</p>
+        <p className="text-red-400">{ error?.response?.data?.err || error?.response?.data || "Could not load page."}</p>
       </div>
     );
   }

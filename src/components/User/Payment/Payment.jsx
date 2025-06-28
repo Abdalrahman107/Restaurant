@@ -23,7 +23,7 @@ const Payment = () => {
     },
     onError: (error) => {
       console.log(error);
-      toast.error(error?.response?.data?.err || err?.response?.data || "Something went wrong");
+      toast.error(error?.response?.data?.err || error?.response?.data || "Something went wrong");
     },
   });
 

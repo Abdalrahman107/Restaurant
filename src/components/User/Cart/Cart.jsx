@@ -22,7 +22,7 @@ const Cart = () => {
 
   const handleError = (error) => {
     console.log(error);
-    toast.error(error?.response?.data?.err || err?.response?.data || "Something went wrong");
+    toast.error(error?.response?.data?.err || error?.response?.data || "Something went wrong");
   };
 
   const removeItemMutation = useMutation({
@@ -54,7 +54,7 @@ const Cart = () => {
     console.log(error);
     return (
       <div className="py-6 text-center text-red-400 min-h-screen">
-        <p>{ error?.response?.data?.err || err?.response?.data || "Could not load Cart."}</p>
+        <p>{ error?.response?.data?.err || error?.response?.data || "Could not load Cart."}</p>
       </div>
     );
   }

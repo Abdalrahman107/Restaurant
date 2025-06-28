@@ -71,7 +71,7 @@ const ManageUsers = () => {
   if (isError) {
     return (
       <div className="py-6 text-center">
-        <p className="text-red-400">{ error?.response?.data?.err || err?.response?.data || "Could not load Users."}</p>
+        <p className="text-red-400">{ error?.response?.data?.err || error?.response?.data || "Could not load Users."}</p>
       </div>
     );
   }

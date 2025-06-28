@@ -27,7 +27,7 @@ const CreateReservation = () => {
     },
     onError: (error) => {
       console.log(error);
-      toast.error(error?.response?.data?.message + "you can reserve a table at : " + error?.response?.data?.nextAvailableAt || err?.response?.data || "Failed to create reservation");
+      toast.error(error?.response?.data?.message + "you can reserve a table at : " + error?.response?.data?.nextAvailableAt || error?.response?.data || "Failed to create reservation");
     },
   });
 

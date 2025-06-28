@@ -44,7 +44,7 @@ function ReviewsSlider() {
     console.log(error);
     return (
       <div className="py-6 text-center text-red-400">
-        <p>{ error?.response?.data?.err || err?.response?.data || "Could not load reviews."}
+        <p>{ error?.response?.data?.err || error?.response?.data || "Could not load reviews."}
         </p>
       </div>
     );

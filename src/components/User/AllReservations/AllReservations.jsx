@@ -34,7 +34,7 @@ const AllReservations = () => {
 
   if (isError){
     console.log(error);
-     return <div className="min-h-[65vh] text-center text-red-500 mt-8">{ error?.response?.data?.err || err?.response?.data || "Could not load reservations."}</div>;
+     return <div className="min-h-[65vh] text-center text-red-500 mt-8">{ error?.response?.data?.err || error?.response?.data || "Could not load reservations."}</div>;
   }
   if (isLoading)
   {
