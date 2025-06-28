@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+:root{
+    --main-color:#e52b34;
+    --animate-delay: 0.8s;
+}
+
+
+.main-color{
+    color: var(--main-color);
+}
+
+.main-bg-color{
+    background-color: var(--main-color) ;
+}
+
+.f-danc{
+    font-family: "Dancing Script", cursive;
+}
+
+.f-inter{
+    font-family: "Inter", sans-serif;
+}
+
+.f-nunito{
+    font-family: "Nunito", sans-serif;
+}
+
+
+.active{
+    color: var(--main-color);
+    
+}
+
+.active.menu-item{
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+/* .active.dashboard-sidebar-menu{
+    @apply var(--main-color)
+} */
+.container{ 
+    width: 95%;
+    margin: auto;
+}
+
+/* 
+.animate__bounce{
+    margin-top: -100px !important;
+} */
