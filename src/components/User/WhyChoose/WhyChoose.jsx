@@ -1,7 +1,7 @@
 import { GiCampCookingPot } from "react-icons/gi";
 import { MdSpeed } from "react-icons/md";
 import { SiCodechef, SiIfood } from "react-icons/si";
-import SectionHeader from "../SectionHeader/sectionHeader";
+import SectionHeader from "../SectionHeader/SectionHeader";
 
 const WhyChoose = () => {
   return (

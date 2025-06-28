@@ -1,4 +1,4 @@
-import SectionHeader from "../SectionHeader/sectionHeader";
+import SectionHeader from "../SectionHeader/SectionHeader";
 import { MdOutlineFastfood } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";

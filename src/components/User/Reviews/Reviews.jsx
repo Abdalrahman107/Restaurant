@@ -6,7 +6,7 @@ import * as Yup from "yup";
 import toast from "react-hot-toast";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
-import SectionHeader from "../SectionHeader/sectionHeader";
+import SectionHeader from "../SectionHeader/SectionHeader";
 import ReviewModal from "../ReviewModal/ReviewModal";
 import ReviewsSlider from "../ReviewsSlider/ReviewsSlider";
 import { authContext } from "../../../Context/AuthContext";
