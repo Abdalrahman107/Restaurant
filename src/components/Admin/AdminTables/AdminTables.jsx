@@ -92,7 +92,7 @@ const AdminTables = () => {
   }
 
   return (
-    <div className="dark:bg-gray-900">
+    <div className="dark:bg-gray-900 min-h-screen">
       <div className=" relative max-w-full">
         <h2 className="text-2xl font-bold mb-4 p-4 dark:text-white">Tables</h2>
 
@@ -133,9 +133,6 @@ const AdminTables = () => {
                 Branch
               </th>
               <th scope="col" className="px-6 py-3">
-                Reservation Status
-              </th>
-              <th scope="col" className="px-6 py-3">
                 Action
               </th>
             </tr>
@@ -151,7 +148,6 @@ const AdminTables = () => {
                   <td className="px-6 py-4">{table.number}</td>
                   <td className="px-6 py-4">{table.capacity} persons</td>
                   <td className="px-6 py-4">{table.branchId.name}</td>
-                  <td className="px-6 py-4">{table.reserved ? "active" : "not-active"}</td>
 
                   <td className="px-6 py-4 flex ">
                     {/* Modal toggle */}

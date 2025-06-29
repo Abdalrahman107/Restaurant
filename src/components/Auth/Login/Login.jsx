@@ -18,10 +18,10 @@ export default function Login() {
     axios
       .post("https://yumyum-server-six.vercel.app/users/login", values)
       .then((res) => {
-              if (!res.data.token || !res.data.role) {
-        toast.error("Invalid response from server");
-        return;
-      }
+        if (!res.data.token || !res.data.role) {
+          toast.error("Invalid response from server");
+          return;
+        }
 
         const newToken = res.data.token;
         const finalToken = `ymym__${newToken}`;
@@ -62,7 +62,11 @@ export default function Login() {
     },
     validationSchema: Yup.object({
       email: Yup.string().trim().email("Please enter a Valid Mail").required("Input is Required"),
-      password: Yup.string().trim().required("Input is Required"),
+      password: Yup.string()
+        .trim()
+        .required("Password is required")
+        .min(6, "Minimum 6 characters required")
+        .max(16, "Maximum 16 characters allowed"),
     }),
     onSubmit: (values) => login(values),
   });

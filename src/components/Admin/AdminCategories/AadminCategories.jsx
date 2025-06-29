@@ -80,8 +80,8 @@ const AadminCategories = () => {
   }
 
   return (
-    <div className="dark:bg-gray-900">
-      <div className=" relative max-w-full">
+    <div className="dark:bg-gray-900 min-h-screen">
+      <div className=" relative  max-w-full">
         <h2 className="text-2xl font-bold mb-4 p-4 dark:text-white">Categories</h2>
         
           <button

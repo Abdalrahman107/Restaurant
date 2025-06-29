@@ -34,7 +34,7 @@ const AllReservations = () => {
 
   if (isError){
     console.log(error);
-     return <div className="min-h-[65vh] text-center text-red-500 mt-8">{ error?.response?.data?.err || error?.response?.data || "Could not load reservations."}</div>;
+     return <div className="min-h-screen text-center text-red-500 mt-8">{ error?.response?.data?.err || error?.response?.data || "Could not load reservations."}</div>;
   }
   if (isLoading)
   {
@@ -45,11 +45,11 @@ const AllReservations = () => {
     );
   }
   if (data?.reservations?.length === 0){
-    return <div className="min-h-[65vh] text-center mt-8 text-xl text-gray-500">You have no reservations.</div>;
+    return <div className="min-h-screen text-center mt-8 text-xl text-gray-500">You have no reservations.</div>;
   }
   return (
-    <div className="bg-neutral-50 dark:bg-gray-900 min-h-[65vh]">
-      <div className="container py-8 min-h-[60vh] dark:text-white">
+    <div className="bg-neutral-50 dark:bg-gray-900 min-h-screen">
+      <div className="container py-8 dark:text-white ">
         <h2 className="text-2xl font-bold mb-6">Your Reservations</h2>
         <div className="space-y-4">
           {data?.reservations?.map((reservation) => {

@@ -71,7 +71,7 @@ const AdminFoods = () => {
     );
 
   return (
-    <div className="dark:bg-gray-900">
+    <div className="dark:bg-gray-900 min-h-screen">
       <div className="relative  max-w-full">
         <h2 className="text-2xl font-bold mb-4 p-4 dark:text-white">Foods</h2>
         <AdminFoodTable

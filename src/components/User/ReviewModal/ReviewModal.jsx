@@ -10,7 +10,7 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen, formik }) => {
         <div
           id="review-modal"
           className="flex fixed inset-0 z-50 items-center justify-center bg-[rgba(0,0,0,0.5)] dark:bg-[rgba(0,0,0,0.7)] text-black">
-          <div className="relative p-4 w-1/2 max-w-2xl max-h-full">
+          <div className="relative p-4 sm:w-1/2 max-w-2xl max-h-full">
             
             {/* Modal content */}
             <div className="relative bg-white rounded-lg shadow-sm dark:bg-gray-700 p-4">

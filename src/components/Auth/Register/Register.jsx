@@ -30,9 +30,14 @@ export default function Register() {
       password: "",
     },
     validationSchema: Yup.object({
-      name: Yup.string().trim().required("Input is Required"),
+      name: Yup.string().trim().required("Input is Required").min(2, "Minimum 2 characters required")
+        .max(16, "Maximum 16 characters allowed"),
       email: Yup.string().trim().email("Please enter a Valid Mail").required("Input is Required"),
-      password: Yup.string().trim().required("Input is Required"),
+      password: Yup.string()
+        .trim()
+        .required("Password is required")
+        .min(6, "Minimum 6 characters required")
+        .max(16, "Maximum 16 characters allowed"),
     }),
     onSubmit: (values) => register(values),
   });

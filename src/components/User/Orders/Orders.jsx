@@ -73,21 +73,21 @@ const Orders = () => {
             </div>
 
             <div className="divide-y divide-gray-300 dark:divide-gray-600">
-              {order.foods.map((food, index) => (
+              {order?.foods?.map((food, index) => (
                 <div key={index} className="flex flex-col sm:flex-row justify-between py-2">
                   <div className="flex gap-x-4">
                     <div className="w-24">
-                      <img src={food.foodId.image.secure_url} className="w-full h-[10vh] object-cover" alt="food image" />
+                      <img src={food?.foodId?.image?.secure_url || ""} className="w-full h-[10vh] object-cover" alt="food image" />
                     </div>
                     <div>
                       <span className="text-sm md:text-lg dark:text-gray-100">
-                        {food.foodId.title} x {food.quantity}
+                        {food?.foodId?.title || ""} x {food?.quantity || ""}
                       </span>
-                      <p className="text-sm text-gray-500 dark:text-gray-400">{food.variant.label}</p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400">{food?.variant?.label || ""}</p>
                     </div>
                   </div>
                   <span className="dark:text-gray-100 text-sm self-end sm:self-start ">
-                    {(food.price * food.quantity).toFixed(2)} EGP
+                    {(food?.price * food?.quantity).toFixed(2)} EGP
                   </span>
                 </div>
               ))}

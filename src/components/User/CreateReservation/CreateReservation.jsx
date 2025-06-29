@@ -77,7 +77,7 @@ const CreateReservation = () => {
   });
 
   return (
-    <div className="-mt-20 relative bg-cover bg-center" style={{ backgroundImage: `url(${img})` }}>
+    <div className="relative bg-cover bg-center" style={{ backgroundImage: `url(${img})` }}>
       <div className="layer absolute left-0 right-0 top-0 bottom-0 bg-[rgba(0,0,0,0.6)]"></div>
       <div className="container min-h-screen flex flex-col justify-center">
         <div className="text-white mb-4">

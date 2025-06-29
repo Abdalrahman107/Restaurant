@@ -25,7 +25,7 @@ const WelcomeAdmin = () => {
 
 
       <p className="text-gray-700 dark:text-gray-200 mt-4">
-       Welcome at dashboard. Use the sidebar to manage content or click a card below.
+       Welcome at dashboard. Use the sidebar to manage content.
       </p>
 
     </div>

@@ -1,12 +1,112 @@
-# React + Vite
+YummyYum - Online Restaurant Ordering System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack restaurant web application allowing users to view restaurant branches, add reviews, reserve a table,  browse menus, view food details  place orders, and pay online. Includes a robust admin dashboard for managing food items, categories, branches, and more.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🍽️ User Side
 
-## Expanding the ESLint configuration
+Browse food items by category
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Add to cart, apply discount, and checkout
+
+Payment via card (Stripe) or cash
+
+Order success confirmation and invoice download
+
+Mobile responsive design
+
+📅 Admin Dashboard
+
+Manage foods, categories, and branches
+
+Add/edit/delete items with image upload
+
+Track orders and generate invoices
+
+Protected admin routes
+
+🚀 Tech Stack
+
+Frontend: React, Vite, Tailwind CSS, React Router
+
+State & Data: React Query, Axios, Context API
+
+Backend: Node.js, Express, MongoDB, Mongoose
+
+Other: PDFKit, Stripe API, Toast Notifications
+
+🔧 Installation Guide
+
+Backend Setup
+
+Navigate to server/
+
+Run npm install
+
+Create a .env file:
+
+PORT=5000
+MONGO_URI=your_mongodb_url
+STRIPE_SECRET=your_stripe_key
+FRONTEND_URL=https://restaurant-yummy-yum.vercel.app
+
+Run npm start
+
+
+Frontend Setup
+
+Navigate to client/
+
+Run npm install
+
+Create a .env file:
+
+VITE_API_URL=https://yumyum-server-six.vercel.app
+
+Run npm run dev
+
+
+📱 Demo Access
+
+🌐 Live Demo
+
+User View
+
+Admin Panel
+
+🔑 Login Credentials
+
+Admin Email: admin@example.com
+
+Admin Password: 123456
+
+User Email: user@example.com
+
+User Password: 123456
+
+🟯 Screenshots (see CodeCanyon upload)
+
+Home page & category view
+
+Food detail & cart
+
+Checkout (cash/card)
+
+Admin dashboard with food/branch control
+
+Invoice PDF preview
+
+✅ Notes
+
+You must have a Stripe account for card payment.
+
+Images and icons used are for demo purposes.
+
+Fully documented and modular code for easy customization.
+
+🌐 Contact & Support
+
+If you face any issues or have questions, please contact via the profile support tab on CodeCanyon.
+
+Thank you for choosing YummyYum! ✨

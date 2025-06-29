@@ -54,7 +54,7 @@ const MenuItemDetails = () => {
   if (isError) {
     console.log(error);
     return (
-      <div className="py-6 h-[50vh] text-center">
+      <div className="py-6 min-h-screen text-center">
         <p className="text-red-400">{ error?.response?.data?.err || error?.response?.data || "Could not load Food."}</p>
       </div>
     );
@@ -62,7 +62,7 @@ const MenuItemDetails = () => {
 
   if (isLoading) {
     return (
-      <div className="h-[50vh] w-screen flex justify-center items-center ">
+      <div className="min-h-screen w-screen flex justify-center items-center ">
         <ImSpinner9 className=" animate-spin text-6xl main-color" />
       </div>
     );
